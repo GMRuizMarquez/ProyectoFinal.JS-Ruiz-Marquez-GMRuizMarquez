@@ -1,0 +1,363 @@
+@font-face {
+  font-family: Graphik;
+  src: url(../ASSETS/FONT/Graphik-Regular-Web.woff);
+}
+
+@font-face {
+  font-family: TiemposTextWeb-Regular;
+  src: url(../ASSETS/FONT/TiemposTextWeb-Regular.woff2);
+}
+
+@font-face {
+  font-family: TiemposHeadLineWeb-Bold;
+  src: url(../ASSETS/FONT/TiemposHeadlineWeb-Bold.woff2);
+}
+
+@font-face {
+  font-family: cinzel-regular;
+  src: url(../ASSETS/FONT/Cinzel\ Regular.woff2);
+}
+
+
+html {
+  color: #ECB176;
+  background-color: #FED8B1;
+}
+
+.body {
+  margin: 0 auto;
+  width: 1589px;
+  background-color: #a67b5bd0;
+  font-family: TiemposHeadlineWeb-Regular, Georgia, serif;
+  max-width: 1376px;
+
+}
+
+#carrito-container {
+  position: fixed;
+  top: 0;
+  left: -379px;
+  width: 379px;
+  height: 100%;
+  background-color: #fff;
+  border-right: 1px solid #ccc;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  transition: left 0.3s ease-in-out;
+  overflow-y: auto;
+  z-index: 1000;
+}
+
+#carrito-container.show {
+  left: 0;
+}
+
+#carrito-container .close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.carrito-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  padding: 10px;
+}
+
+.carrito-item img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+
+.navbar {
+  font-size: 20px;
+  font-family: cinzel-regular, Georgia, serif;
+  background-color: #3a1414;
+  text-decoration: dashed;
+}
+
+.navbar-brand {
+  font-family: cinzel-regular, Georgia, serif;
+  text-decoration: underline;
+  font-size: 30px;
+
+}
+
+.nav-link {
+  color: #fd0303;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.main {
+  position: relative;
+  color: white;
+  padding: 0%;  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(8deg, rgba(110, 60, 37, 0.534) 35%, rgba(245, 225, 159, 0.274) 75%), url("../ASSETS/IMG/20230531_164955241_iOS.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.m-historia{
+  background-image: linear-gradient(8deg, rgba(100, 42, 15, 0.445) 35%, rgba(245, 225, 159, 0.274) 75%), url("../ASSETS/IMG/20230531_165713839_iOS.jpg");
+  padding: 60px;
+  color: #3a1414;
+}
+
+.m-contact{
+  background-image: linear-gradient(8deg, rgba(100, 42, 15, 0.445) 35%, rgba(245, 225, 159, 0.274) 75%), url("../ASSETS/IMG/20230530_162112440_iOS.jpg");
+  padding: 60px;
+  color: #3a1414;
+
+}
+.t-historia{
+  color: #200202;
+}
+
+
+.contacto {
+  background-color: #ECB176;
+  border-radius: 5%;
+}
+
+.button {
+  background-color: #163020;
+  color: bisque;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: TiemposHeadlineWeb-Regular, Georgia, serif;
+  font-size: 20px;
+  margin: 0px;
+  text-decoration: none;
+  display: inline-block;
+  width: 200px;
+  height: 50px;
+  text-align: center;
+
+}
+
+.button:hover {
+  background-color: bisque;
+  color: #163020;
+
+}
+
+.title {
+  color: #200202;
+  border: #163020;
+}
+
+.subtitle {
+  color: #fcefeff1;
+  border: #200202;
+  font-size: 20px;
+  background-color: #00000057;
+  border-radius: 10px;
+}
+
+
+.bmain {
+  background-color: #fcefeff1;
+  color: rgb(59, 35, 5);
+  border: #703d02;
+
+}
+
+.bmain:hover {
+  background-color: #200202;
+  color: #e6e9e7;
+}
+
+.footer {
+  font-size: 15px;
+  color: #ccc;
+}
+
+.copyright {
+  color: #ECB176;
+}
+
+.copyright:hover {
+  background-color: #eee6e6;
+  color: #3a1414;
+}
+
+
+/* General styles for the contact section */
+.hero-contact {
+  background-color: #3a1414;
+  border-radius: 3%;
+  padding: 2rem 0;
+}
+
+/* Styles for the container */
+.container-md.contacto {
+  background-color: #ecb1768c;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: #e6e9e7;
+}
+
+/* Styles for the section titles */
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+
+/* Styles for the contact info boxes */
+.contact-info .contact-box {
+  margin-bottom: 1.5rem;
+}
+
+.contact-info .contact-box h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.contact-info .contact-box p, .contact-info .contact-box a {
+  font-size: 1rem;
+}
+
+/* Styles for the contact form */
+.contact-form {
+  background-color: #ECB176;
+  padding: 2rem;
+  border-radius: 5%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form .form-group {
+  margin-bottom: 1rem;
+}
+
+.contact-form label {
+  font-size: 1rem;
+  color: #444;
+}
+
+.contact-form .form-control {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 0.5rem;
+  font-size: 1rem;
+  color: #333;
+}
+
+
+
+.map-container iframe {
+  width: 100%;
+  height: 650px;
+  border: 3px;;
+  border-radius: 10px;
+ }
+
+
+.refbot {
+  margin-top: 2rem;
+}
+
+.refbot .button {
+  background-color: #163020;
+  color: bisque;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: TiemposHeadlineWeb-Regular, Georgia, serif;
+  font-size: 20px;
+  margin: 0px;
+  text-decoration: none;
+  display: inline-block;
+  width: 200px;
+  height: 50px;
+  text-align: center;
+}
+
+
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .contact-info, .contact-form {
+      margin-bottom: 2rem;
+  }
+
+  .contact-info .map-container iframe {
+      height: 300px;
+  }
+}
+section {
+  background-color: #A67B5B;
+  padding: 2rem 0;
+}
+
+.content-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+  background-color: #FED8B1;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.content-wrapper img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  object-fit: cover;
+}
+
+.text-content {
+  flex: 1;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.text-content .card-title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.text-content .txt-test {
+  font-size: 1rem;
+  color: #6c757d;
+  line-height: 1.6;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .content-wrapper {
+      flex-direction: column;
+  }
+
+  .text-content {
+      padding: 1rem;
+  }
+
+  .text-content .card-title {
+      font-size: 1.5rem;
+  }
+
+  .text-content .txt-test {
+      font-size: 0.9rem;
+  }
+}
+
+
